@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-masthead">
+      <div class="site-banner">
+        <img
+          src="assets/img/banner-sulfur-crystals.jpg"
+          alt="Microscopic sulfur crystals in polarized light"
+          width="1920"
+          height="1281"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="site-nav-strip">
+        <div class="site-nav-strip-inner">
+          <nav class="site-primary-nav" aria-label="Primary">
+            <a href="index.html" class="nav-link nav-link-active">Home</a>
+            <a href="writings.html" class="nav-link">Research</a>
+          </nav>
+          <p class="site-banner-attribution">
+            Banner: sulfur crystals (polarized light),
+            <a
+              href="https://commons.wikimedia.org/wiki/File:Microscopic_image_of_crystals_growing_from_melted_sulfur_3.jpg"
+              rel="noopener"
+              >Wikimedia Commons</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro-grid">
+          <div class="intro-photo">
+            <img
+              src="assets/img/profile.jpg"
+              alt="Portrait of Geoffrey Lee"
+            />
+          </div>
+          <div class="intro-text">
+            <h1>Geoffrey Lee</h1>
+            <p>
+              Welcome to my website. I am currently Associate Professor of Philosophy at UC Berkeley. My main research interests are in philosophy of mind, metaphysics, and philosophy of cognitive science and neuroscience. I am currently finishing a book on the philosophy and science of consciousness, tentatively titled &ldquo;The Search for the Inner Light : Finding Consciousness in a Physical World&rdquo;. You can check out my research <a href="writings.html">here</a>.
+            </p>
+            <section class="contact-block">
+              <h2>Contact</h2>
+              <p>
+                Email:
+                <a href="mailto:geoffrey_lee@berkeley.edu">geoffrey_lee@berkeley.edu</a>
+              </p>
+              <p>
+                <a href="https://philosophy.berkeley.edu/lee" rel="noopener">UC Berkeley faculty page</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p>&copy; <span id="year"></span> Geoffrey Lee</p>
+      </div>
+      <script>
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      </script>
+    </footer>
+  </body>
+</html>
+
